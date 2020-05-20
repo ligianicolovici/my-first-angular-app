@@ -9,13 +9,6 @@ export class UserComponent {
   username = '';
   constructor() {}
 
-  isUsernameEmpy() {
-    if (this.username !== '') {
-      return false;
-    } else {
-      return true;
-    }
-  }
   resetUsername() {
     this.username = '';
   }

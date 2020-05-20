@@ -22,6 +22,6 @@
   Display Details
 </button>
 <p *ngIf="showPassword">Secret password = tuna</p>
-<div *ngFor="let item of toggleArray" [ngStyle]="{ backgroundColor: item >= 5 ? 'blue' : 'transparent' }" [ngClass]="{ 'white-text': item >= 5 }">
+<div *ngFor="let item of toggleArray; let i = index" [ngStyle]="{ backgroundColor: i >= 5 ? 'blue' : 'transparent' }" [ngClass]="{ 'white-text': i >= 5 }">
     {{ item }}
 </div>

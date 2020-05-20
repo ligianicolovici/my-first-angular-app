@@ -12,7 +12,7 @@ export class ServersComponent {
   serverCreated = false;
   servers = ['Testserver', 'Testserver 2'];
   showPassword = false;
-  toggleArray: number[] = [];
+  toggleArray = [];
   toggleContor = 0;
 
   constructor() {
@@ -33,6 +33,6 @@ export class ServersComponent {
   onToggleDetails() {
     this.showPassword = !this.showPassword;
     this.toggleContor = this.toggleContor + 1;
-    this.toggleArray.push(this.toggleContor);
+    this.toggleArray.push(new Date());
   }
 }
